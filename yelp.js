@@ -17,7 +17,8 @@ var express      = require('express'),
      authRoutes      =require("./routes/index");
 
 //seedDB();
-mongoose.connect("mongodb://localhost/yelp_camp");
+mongoose.connect("mongodb://josika:josika15@ds261470.mlab.com:61470/myyelpcamp1");
+//mongodb://josika:josika15@ds261470.mlab.com:61470/myyelpcamp1
 app.use(bodyParser.urlencoded({extended:true}));
 app.use(express.static(__dirname+"/ublic"));
 app.use(methodeOverride("_method"));
